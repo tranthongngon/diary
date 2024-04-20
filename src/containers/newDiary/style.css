@@ -1,0 +1,108 @@
+.choose-mood .MuiRadio-root.Mui-checked span svg path {
+ fill: var(--color-primary) !important;
+}
+
+.choose-mood .MuiRadio-root.Mui-checked+span.MuiFormControlLabel-label {
+ color: var(--color-primary) !important;
+}
+
+.choose-mood .MuiRadio-root {
+ padding: 0 !important;
+ padding-right: 5px !important;
+}
+
+.choose-mood label {
+ margin-right: 5px !important;
+ margin-left: 0 !important;
+}
+
+.choose-mood .list-mood {
+ margin: -7.5px -15px;
+}
+
+.choose-mood .list-mood>* {
+ padding: 7.5px 15px;
+}
+
+.choose-mood {
+ margin-bottom: 15px;
+}
+
+.choose-mood h2,
+.form-control h2 {
+ color: var(--color-secondary);
+}
+
+.content-preview {
+ overflow: hidden;
+}
+
+.content-preview img {
+ width: 100%;
+ height: auto;
+ -o-object-fit: cover;
+ object-fit: cover;
+ display: block;
+}
+
+.text-mood {
+ font-size: 16px;
+ font-weight: 500;
+ color: var(--color-secondary);
+ margin-top: 5px;
+}
+
+.btn-save-diary,
+.btn-view-single-diary {
+ padding: 6px 15px;
+ font-size: 14px;
+ font-weight: 500;
+ text-transform: uppercase;
+ background-color: var(--color-secondary);
+ color: white;
+ border: 1px solid var(--color-secondary);
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+.btn-save-diary:disabled {
+ background-color: var(--color-primary);
+ cursor: not-allowed;
+}
+
+.btn-view-single-diary {
+ cursor: pointer;
+ text-decoration: none;
+ margin-left: 15px;
+}
+.form-control textarea {
+ resize: none;
+ width: 100%;
+ background-color: transparent;
+ padding: 10px;
+ border: 1px solid;
+ font-size: 16px;
+ font-weight: 500;
+ border: 1px solid var(--color-secondary);
+}
+.diary-image {
+ width: 100%;
+ height: 350px;
+ -o-object-fit: cover;
+    object-fit: cover
+}
+@media (max-width:991px) {
+ .diary-image {
+  height: 300px;
+ }
+}
+@media (max-width:767px) {
+ .diary-image {
+  height: 250px;
+ }
+}
+@media (max-width:575px) {
+ .diary-image {
+  height: 200px;
+ }
+}

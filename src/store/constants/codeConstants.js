@@ -1,0 +1,1 @@
+export const GET_CODE_CONFIRM = 'get_code_confirm';

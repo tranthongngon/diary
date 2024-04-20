@@ -1,0 +1,323 @@
+.gallery-header {
+ -webkit-box-pack: justify;
+ -ms-flex-pack: justify;
+ justify-content: space-between;
+ margin-bottom: 20px;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
+ align-items: center;
+}
+
+.gallery-title {
+ font-size: 24px;
+ font-weight: 700;
+ line-height: 1;
+ color: var(--color-secondary);
+}
+
+.btn-upload {
+ background-color: var(--color-secondary);
+ color: #fff;
+ font-size: 14px;
+ font-weight: 500;
+ padding: 8px 15px;
+ border: 1px solid var(--color-secondary);
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.preview-file {
+ margin-top: 10px !important;
+ margin: -5px;
+ height: auto;
+ max-height: 400px;
+ overflow-y: scroll;
+}
+
+.input-upload {
+ width: -webkit-fit-content;
+ width: -moz-fit-content;
+ width: fit-content;
+ height: 30px;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
+ align-items: center;
+ -webkit-box-pack: center;
+ -ms-flex-pack: center;
+ justify-content: center;
+ cursor: pointer;
+ background: none;
+ border: none;
+}
+
+.input-upload input {
+ border: none;
+ cursor: pointer;
+}
+
+.img-item {
+ padding: 5px;
+}
+
+.preview-file img {
+ aspect-ratio: 1/1;
+ -o-object-fit: cover;
+ object-fit: cover;
+ width: 100%;
+ border: 1px solid var(--color-primary);
+ border-radius: 5px;
+}
+
+.btn-upload:disabled {
+ background-color: var(--color-primary);
+ cursor: not-allowed;
+}
+
+.gallery-item {
+ border-radius: 10px;
+ position: relative;
+ display: block;
+}
+
+.gallery-item .cover-bg {
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 3px;
+ background-color: rgba(40, 84, 48, 0.4);
+ border-radius: 10px;
+ z-index: 1;
+ cursor: -webkit-zoom-in;
+ cursor: zoom-in;
+ -webkit-transition: all 0.3s;
+ -o-transition: all 0.3s;
+ transition: all 0.3s;
+ opacity: 0;
+ visibility: hidden;
+ pointer-events: none;
+}
+
+.gallery-item:hover .cover-bg,
+.gallery-item:hover .action-gallery {
+ opacity: 1;
+ visibility: visible;
+ pointer-events: all;
+}
+
+.gallery-item img {
+ width: 100%;
+ border-radius: 10px;
+}
+
+.action-gallery {
+ position: absolute;
+ top: auto;
+ bottom: 12px;
+ left: auto;
+ right: 10px;
+ z-index: 5;
+ width: -webkit-fit-content;
+ width: -moz-fit-content;
+ width: fit-content;
+ height: -webkit-fit-content;
+ height: -moz-fit-content;
+ height: fit-content;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-transition: all 0.3s;
+ -o-transition: all 0.3s;
+ transition: all 0.3s;
+ opacity: 0;
+ visibility: hidden;
+ pointer-events: none;
+}
+
+.action-gallery button {
+ width: 25px;
+ height: 25px;
+ border: none;
+ background-color: #fff;
+ color: var(--color-primary);
+ border-radius: 50%;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
+ align-items: center;
+ -webkit-box-pack: center;
+ -ms-flex-pack: center;
+ justify-content: center;
+ cursor: pointer;
+}
+
+.action-gallery button svg {
+ height: 16px;
+ fill: var(--color-primary);
+}
+
+.action-gallery button:last-child {
+ margin-left: 8px;
+}
+
+progress {
+ display: block;
+ /* default: inline-block */
+ width: 100%;
+ background: var(--color-fifth);
+ border-radius: 14px;
+}
+
+progress::-moz-progress-bar {
+ border-radius: 12px;
+}
+
+progress::-webkit-progress-bar {
+ background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+ border-radius: 12px;
+ background-color: var(--color-primary);
+}
+
+.dialog-delete-image img {
+ width: 300px;
+ aspect-ratio: 1/1;
+ -o-object-fit: cover;
+ object-fit: cover;
+}
+
+.view-full-image {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: rgba(40, 84, 48, 0.8);
+ z-index: 3;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-pack: center;
+ -ms-flex-pack: center;
+ justify-content: center;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
+ align-items: center;
+
+}
+
+.view-full-image img {
+ width: auto;
+ height: auto;
+ max-width: 80%;
+ max-height: 80%;
+ -o-object-fit: cover;
+ object-fit: cover;
+ z-index: 4;
+}
+
+.btn-action {
+ padding: 5px 10px;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
+ align-items: center;
+ -webkit-box-pack: center;
+ -ms-flex-pack: center;
+ justify-content: center;
+ cursor: pointer;
+ background-color: #fff;
+ border: 1px solid var(--color-primary);
+ border-radius: 10px;
+ z-index: 5;
+}
+
+.btn-action svg {
+ fill: var(--color-primary);
+}
+
+.btn-action-left {
+ margin-right: -20px;
+}
+
+.btn-action-right {
+ margin-left: -20px;
+}
+
+.action-full-image {
+ position: absolute;
+ top: 15px;
+ bottom: auto;
+ right: 15px;
+ left: auto;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
+ align-items: center;
+ -webkit-box-pack: center;
+ -ms-flex-pack: center;
+ justify-content: center;
+ z-index: 3;
+}
+
+.btn-action-image {
+ width: 25px;
+ height: 25px;
+ border: 1px solid var(--color-secondary);
+ border-radius: 50%;
+ cursor: pointer;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
+ align-items: center;
+ -webkit-box-pack: center;
+ -ms-flex-pack: center;
+ justify-content: center;
+}
+
+.btn-action-image svg {
+ height: 16px;
+}
+
+.btn-action-image-close {
+ margin-left: 8px;
+}
+
+@media (max-width:767px) {
+ .action-gallery {
+  display: none;
+ }
+
+ .gallery-item .cover-bg {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+  background-color: transparent;
+ }
+}
+
+@media (max-width:575px) {
+ .gallery-title {
+  font-size: 20px;
+ }
+
+ .btn-upload {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 6px 10px;
+ }
+}
